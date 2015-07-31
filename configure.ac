@@ -26,6 +26,7 @@ AM_PATH_SDL($SDL_VERSION,
             AC_MSG_ERROR([*** SDL version $SDL_VERSION not found!])
 )
 CXXFLAGS="$CXXFLAGS $SDL_CFLAGS"
+CFLAGS="$CFLAGS $SDL_CFLAGS"
 LIBS="$LIBS $SDL_LIBS"
 AC_CHECK_LIB(SDL_mixer, Mix_OpenAudio, LIBS="$LIBS -lSDL_mixer")
 
