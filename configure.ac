@@ -4,6 +4,8 @@ AM_INIT_AUTOMAKE(openglad, 0.98.1)
 AC_CONFIG_SRCDIR(src/glad.cpp)
 AM_CONFIG_HEADER(src/config.h)
 
+AM_INIT_AUTOMAKE([subdir-objects])
+
 test "x$prefix" = "xNONE" && prefix=/usr/local
 test "x$exec_prefix" = "xNONE" && exec_prefix=$prefix
 test "x$sysconfdir" = 'x${prefix}/etc' && sysconfdir=${prefix}/etc
