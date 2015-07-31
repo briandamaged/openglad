@@ -2419,7 +2419,7 @@ short load_version_6(SDL_RWops  *infile, screen * master, short version)
 	short listsize;
 	short i;
 	walker * new_guy;
-	char newgrid[12] = "grid.pix";  // default grid
+	char newgrid[24] = "grid.pix";  // default grid
 	char new_scen_type; // read the scenario type
 	char oneline[80];
 	char numlines, tempwidth;
