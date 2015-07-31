@@ -1,14 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # $Id$
 
-# Remove any previously created cache files
-test -w config.cache && rm config.cache
-test -w config.cross.cache && rm config.cross.cache
 
 # Regenerate configuration files
 aclocal
 autoheader
-automake --foreign
+automake -a
 autoconf
 
 # Run configure for this platform
